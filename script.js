@@ -9,14 +9,16 @@ function show(text) {
 
 // ---------- Task 6. Variables and data types ----------
 show("=== Task 6. Variables and data types ===");
-const siteName = "VintageTape";   // string
-const tapesCount = 24;            // number
-const isOnline = true;            // boolean
-let age = 19;                     // let, because it will change
+const firstName = "Elnura";       // string
+const lastName = "Zholdanova";    // string
+const group = "MT2503";           // string
+const isStudent = true;           // boolean
+let age = 19;                     // number, let, because it will change
 
-show("siteName = " + siteName + ", typeof: " + typeof siteName);
-show("tapesCount = " + tapesCount + ", typeof: " + typeof tapesCount);
-show("isOnline = " + isOnline + ", typeof: " + typeof isOnline);
+show("firstName = " + firstName + ", typeof: " + typeof firstName);
+show("lastName = " + lastName + ", typeof: " + typeof lastName);
+show("group = " + group + ", typeof: " + typeof group);
+show("isStudent = " + isStudent + ", typeof: " + typeof isStudent);
 show("age before = " + age + ", typeof: " + typeof age);
 age = 20; // reassign the let variable
 show("age after = " + age + ", typeof: " + typeof age);
@@ -25,7 +27,6 @@ show("age after = " + age + ", typeof: " + typeof age);
 show("\n=== Task 7. Input and a greeting ===");
 const userName = prompt("Enter your name:", "Elnura");
 alert("Hello, " + userName + "!");
-const group = "MT2503";
 console.log("Hello, " + userName + " from group " + group + "!");
 output.textContent += "Hello, " + userName + " from group " + group + "!\n";
 
@@ -42,15 +43,15 @@ show("Remainder: " + (a % b));
 
 // ---------- Task 9. Strings ----------
 show("\n=== Task 9. Strings ===");
-const text = "Vintage Tape";
-show("Text: " + text);
-show("Length: " + text.length);
-show("Uppercase: " + text.toUpperCase());
-show("Lowercase: " + text.toLowerCase());
-show("First three characters: " + text.slice(0, 3));
-const part1 = "Cassettes are";
-const part2 = "back in style";
-show("Joined: " + part1 + " " + part2 + ".");
+const fullName = firstName + " " + lastName;
+show("Full name: " + fullName);
+show("Length: " + fullName.length);
+show("Uppercase: " + fullName.toUpperCase());
+show("Lowercase: " + fullName.toLowerCase());
+show("First three characters: " + fullName.slice(0, 3));
+const part1 = "My name is";
+const part2 = "and I study in group";
+show("Joined: " + part1 + " " + fullName + " " + part2 + " " + group + ".");
 
 // ---------- Task 10. Increment and assignment operators ----------
 show("\n=== Task 10. Increment and assignment operators ===");
